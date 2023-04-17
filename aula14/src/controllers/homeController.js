@@ -5,7 +5,7 @@ HomeModel.create({
   descricao: "Teste da descricao",
 })
   .then((dados) => console.log(dados))
-  .cath((e) => console.log(e));
+  .catch((e) => console.log(e));
 
 exports.paginaInicial = (req, res) => {
   res.render("index");
