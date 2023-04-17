@@ -1,4 +1,4 @@
-require("dotenv").cofig();
+require("dotenv").config();
 
 const express = require("express");
 const app = express();
@@ -10,7 +10,8 @@ mongoose
   })
   .then(() => {
     app.emit("pronto");
-  });
+  })
+  .catch((e) => console.log(e));
 
 const routes = require("./routes");
 const path = require("path");
